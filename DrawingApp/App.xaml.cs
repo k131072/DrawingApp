@@ -14,6 +14,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
 
 namespace DrawingApp
 {
@@ -30,6 +32,7 @@ namespace DrawingApp
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+            AppCenter.Start("f5ee1dc6-119a-4e7b-9e22-3fc7afb83cca", typeof(Analytics));
         }
 
         /// <summary>
